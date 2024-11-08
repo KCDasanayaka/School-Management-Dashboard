@@ -5,18 +5,28 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lama Dev School Management Dashboard",
+  title: "School Management Dashboard",
   description: "Next.js School Management System",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>test{children}</body>
+      <head />
+      <body className={inter.className}>
+        <div className="h-screen flex">
+          <div className="w-[8%] lg:w-[16%] xl:w-[14%] bg-red-500">
+            l
+          </div>
+          <div className="w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-600">
+            r
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
