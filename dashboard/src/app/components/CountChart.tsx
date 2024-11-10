@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import more from '../../../public/more.png'
+import more from '../../../public/moreDark.png'
 import gender from '../../../public/maleFemale.png'
 
 
@@ -32,7 +32,7 @@ const CountChart = () => {
   return (
     <div className='bg-white rounded-xl w-full h-full p-4'>
         <div className='flex justify-between items-center'>
-            <h1 className='text-lg font-semibold'>Student</h1>
+            <h1 className='text-lg font-semibold text-black'>Student</h1>
             <Image src={more} alt='' width={20} height={20}/>
         </div>
         <div className='relative w-full h-[75%]'>

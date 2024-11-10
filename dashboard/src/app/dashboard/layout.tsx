@@ -14,6 +14,6 @@ export default function DashBoardLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <div>dashboard{children}</div>
+      <div className="capitalize font-semibold text-black text-lg">dashboard{children}</div>
   );
 }
