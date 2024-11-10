@@ -19,7 +19,7 @@ const data = [
   {
     name: 'Mar',
     income: 2000,
-    expence: 9800,
+    expence: 5800,
   },
   {
     name: 'Apr',
@@ -54,7 +54,7 @@ const data = [
   {
     name: 'Oct',
     income: 2000,
-    expence: 9800,
+    expence: 5800,
   },
   {
     name: 'Nov',
@@ -84,7 +84,7 @@ const FinanceChart = () => {
             top: 5,
             right: 30,
             left: 20,
-            bottom: 5,
+            bottom: 10,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" stroke='#ddd'/>

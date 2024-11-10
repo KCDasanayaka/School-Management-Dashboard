@@ -24,3 +24,18 @@ body {
     padding: 0;
   }
 }
+
+.react-calendar{
+  width: 100% !important;
+  border: none !important;
+  font-family: "Inter", sens-serif !important;
+}
+
+.react-calendar__tile--active{
+  background-color: #c3ebfa !important;
+  color: black !important;
+}
+
+.react-calendar__navigation__label__labelText{
+  font-weight: 700 !important;
+}
