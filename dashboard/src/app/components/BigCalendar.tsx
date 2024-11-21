@@ -6,13 +6,20 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import { useState } from "react";
 import { calendarEvents } from "../lib/data";
 
+// Ensure the events have the correct structure
+const formattedEvents = calendarEvents.map(event => ({
+  ...event,
+  start: new Date(event.start),
+  end: new Date(event.end),
+}));
+
 const localizer = momentLocalizer(moment);
 
 const BigCalendar = () => {
   const [view, setView] = useState<View>(Views.WORK_WEEK); // Set initial view to WORK_WEEK
 
   const handleOnChangeView = (selectedView: View) => {
-    setView(selectedView);
+        events={formattedEvents}
   };
 
   return (
