@@ -19,7 +19,7 @@ const BigCalendar = () => {
   const [view, setView] = useState<View>(Views.WORK_WEEK); // Set initial view to WORK_WEEK
 
   const handleOnChangeView = (selectedView: View) => {
-        events={formattedEvents}
+    setView(selectedView);
   };
 
   return (

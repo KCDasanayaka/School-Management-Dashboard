@@ -40,7 +40,7 @@ const events = [
 const EventCalender = () => {
     const [value, onChange] = useState<Value>(new Date());
   return (
-    <div className='bg-white p-4 rounded-md'>
+    <div className='bg-white p-4 rounded-md text-black'>
       <Calendar onChange={onChange} value={value} />
       <div className='flex justify-between items-center'>
             <h1 className='text-lg font-semibold text-black my-4'>Events</h1>
@@ -52,7 +52,7 @@ const EventCalender = () => {
             <div className='p-5 rounded-md border-2 border-gray-100 border-t-4 odd:border-t-lamaSky even:border-t-lamaPurple' key={event.id}>
                 
                     <div className='flex items-center justify-between'>
-                        <h1 className='font-semibold text-gray-700'>{event.title}</h1>
+                        <h1 className='font-semibold text-blue-950'>{event.title}</h1>
                         <span className='text-gray-500 text-xs font-bold '>{event.time}</span></div>
                     <p className='mt-2 text-gray-300 text-sm font-medium'>{event.description}</p>
             </div>

@@ -39,14 +39,11 @@ export default function RootLayout({
           </aside>
           {/* Main Content Area */}
           <main className="w-[92%] lg:w-[84%] xl:w-[86%] p-6 bg-[#F7F8Fa] overflow-y-auto ">
-            <Navbar />
+            <Navbar /> {/* Render the Navbar component here */}
             {children}
           </main>
         </div>
       </body>
-   
     </html>
-
-   
   );
 }
