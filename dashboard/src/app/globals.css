@@ -124,3 +124,9 @@ body {
  .rbc-event-label{
   color: gray;
  }
+.rbc-label{
+  color: #0a0a0a !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  font-weight: 700 !important;
+  padding-top: 5px !important;
+}
